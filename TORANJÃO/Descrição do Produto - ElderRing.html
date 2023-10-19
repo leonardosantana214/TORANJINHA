@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Elden Ring - Toranjinha</title>
+  <!-- Ícone da guia do navegador -->
+  <link rel="shortcut icon" href="Frutas/istockphoto-1243077910-170667a.jpg" type="image/x-icon">
+  <!-- Inclusão do arquivo CSS externo -->
+  <link rel="stylesheet" href="styleDescription - ElderRing.css">
+</head>
+<body>
+  <!-- Estilos inline para um alerta -->
+  <style>
+    .alert {
+      background-color: #f44336;
+      color: white;
+    }
+    
+    .closebtn {
+      margin-left: 15px;
+      color: white;
+      font-weight: bold;
+      float: right;
+      font-size: 20px;
+      line-height: 10px;
+      cursor: pointer;
+    }
+    
+    .closebtn:hover {
+      color: black;
+    }
+  </style>
+</head>
+<body>
+  <!-- Div de alerta -->
+  <div id="myAlert" class="alert">
+    <!-- Botão de fechar alerta -->
+    <span class="closebtn" onclick="closeAlert()">&times;</span>
+    <!-- Conteúdo do alerta -->
+    <strong>Alerta:</strong> Aproveite a promoção ;-;
+  </div>
+
+  <!-- Script JavaScript para fechar o alerta -->
+  <script>
+    function closeAlert() {
+      // Obtém o elemento de alerta pelo seu ID
+      var alertElement = document.getElementById("myAlert");
+      // Define o estilo "display" como "none" para tornar o elemento invisível
+      alertElement.style.display = "none";
+    }
+  </script>
+
+  <!-- Menu do site -->
+  <header>
+    <nav>
+      <ul>
+        <!-- Links do menu -->
+        <li><a href="meu primeiro site.html">Inicio</a></li>
+        <img class="imagem" src="Frutas/Logo.png" alt="">
+        <li><a href="TELA DE JOGOS.html">Jogos</a></li>
+        <li><a href="https://www.instagram.com/kinesprice/">Instagram</a></li>
+        <li><a href="Login Toranjão.html">Login</a></li>
+        <li><a href="#">Cadastro</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Conteúdo principal -->
+  <main>
+    <h1>Elden Ring</h1>
+    <main>
+      <div id="Imgbig">
+        <!-- Imagem principal do produto -->
+        <img src="https://art.ngfiles.com/images/1940000/1940747_arferguson_pixel-art-elden-ring-title-screen.gif?f1625850027" style="width: 600px;" alt="Imagem do Produto" class="product-images" id="imagem1">
+        <!-- Imagens pequenas relacionadas ao produto -->
+        <img src="https://steamuserimages-a.akamaihd.net/ugc/1835796359243846866/1195EBBDB89A80A6CCF939EE8CF9FC5FA943929D/?imw=512&&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="1 Produto" class="imgSmall" onclick="trocarComImagemPrincipal(this)">
+        <img src="https://steamuserimages-a.akamaihd.net/ugc/1920240577473879513/E78D69340BF22AE35D74395C361288ABEB4187A8/?imw=5000&imh=5000&ima=fit&impolicy=Letterbox&imcolor=%23000000&letterbox=false" alt="Imagem do Produto" class="imgSmall" onclick="trocarComImagemPrincipal(this)">
+        <img src="https://64.media.tumblr.com/e83c3aefb068d0f339b17f7797325b73/e7fe0bbb157f9888-16/s1280x1920/af505bfaa1899172ee10d9606ab98d042a89adf2.gif" alt="Imagem do Produto" class="imgSmall" onclick="trocarComImagemPrincipal(this)">
+    </div>
+      <div class="product-details">
+        <!-- Descrição do produto -->
+        <p class="product-description">Descrição do Produto:</p>
+        <p class="l2">Em Elden Ring, um mundo é atormentado pelo colapso do Elden Ring, desencadeando uma praga e monstros. Os jogadores embarcam em uma jornada heróica para restaurar o anel, enfrentando inimigos poderosos e explorando um mundo sombrio e misterioso em colaboração com a habilidade de George R.R. Martin e a jogabilidade característica da FromSoftware.</p>
+        <!-- Preço do produto -->
+        <p class="product-price">R$ 20.999,99</p>
+        <!-- Formulário de quantidade e botão de adicionar ao carrinho -->
+        <form class="product-form">
+          <label for="product-quantity">Quantidade:</label>
+          <input type="number" id="resultado1" class="numeros" name="product-quantity" min="1" max="10" value="1">
+          <button type="button" class="add-to-cart-button" onclick="AvisoToranja()">Adicionar ao carrinho</button>
+        </form>
+        <!-- Valor -->
+        <p class="value"> 
+          <div id="resultado"></div>
+        </p>
+      </div>
+      <div class="product-reviews">
+        <!-- Avaliações de clientes -->
+        <h2>Avaliações de Clientes</h2>
+        <ul>
+          <li>
+            <p>Ótimo produto! Recomendo.</p>
+            <p class="review-author">- João Silva</p>
+          </li>
+          <li>
+            <p>Não gostei muito do produto, mas o atendimento foi excelente.</p>
+            <p class="review-author">- Maria Santos</p>
+          </li>
+        </ul>
+      </div>
+    </main>
+  </main>
+</body>
+
+<!-- Inclusão do arquivo JavaScript externo -->
+<script src="JavadaDescrição.js"></script>
+</html>

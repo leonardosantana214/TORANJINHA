@@ -1,0 +1,477 @@
+@import url(https://fonts.googleapis.com/css?family=Poppins:100,100italic,200,200italic,300,300italic,regular,italic,500,500italic,600,600italic,700,700italic,800,800italic,900,900italic);
+
+* {
+  font-family: 'poppins', sans-serif;
+}
+
+.body {
+  background-image: url(Fundo.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  transition: all 3s;
+}
+
+.bodyd {
+  background-image: url(https://wallpaperaccess.com/full/8351171.gif);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  transition: all 3s;
+
+}
+
+.container {
+  width: 400px;
+  overflow: hidden;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  z-index: 0;
+}
+
+/* PESPECTICTVA*/
+
+.card-container {
+  perspective: 500px;
+  margin-bottom: 30px;
+  padding: -200px;
+  width: 100%;
+
+}
+
+.card-container.rotate .card {
+  transform: rotateY(180deg);
+}
+
+.card {
+  transition: transform .85s;
+  transform-style: preserve-3d;
+  position: relative;
+}
+
+
+.login-form {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #FFF;
+  box-shadow: 0 5px 60px 10px orangered;
+  display: flex;
+  transition: width 2s, height 4s;
+  flex-direction: column;
+}
+
+.signup-form {
+  backface-visibility: hidden;
+  position: absolute;
+  top: 0;
+  transition: width 2s, height 4s;
+  left: 0;
+  background-color: #FFF;
+  box-shadow: 0 5px 60px 10px aqua;
+  display: flex;
+  flex-direction: column;
+}
+
+.login-form {
+  z-index: 2;
+}
+
+.signup-form {
+  transform: rotateY(180deg);
+  z-index: 3;
+}
+
+
+.card-container {
+  width: 450px;
+  margin: 0 auto;
+}
+
+.card {
+  background: #FFFFFF;
+  border-radius: 4px;
+  color: orangered;
+  width: 100%;
+}
+
+.card-container,
+.login-form,
+.signup-form {
+  height: 420px;
+  border-radius: 4px;
+}
+
+.login-form,
+.signup-form {
+  width: 100%;
+  height: 420px;
+  border-radius: 4px;
+}
+
+.card .header {
+  margin: 10px;
+  padding: 10px 0 10px 0;
+  text-align: center;
+  border-bottom: 1px solid #EEEEEE;
+  color: #999999;
+  text-transform: uppercase;
+  font-weight: bold;
+
+}
+
+.card .content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0);
+  box-shadow: none;
+  flex: 1;
+}
+
+.card .footer {
+  border-top: 1px solid #EEEEEE;
+  color: #999999;
+  border-radius: 20px;
+  padding: 5px 0 5px 0;
+  text-align: center;
+}
+
+.btn {
+  border: none;
+  border-radius: 2px;
+  display: inline-block;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 16px;
+  font-family: inherit;
+  font-weight: 100;
+  text-align: center;
+  vertical-align: middle;
+  user-select: none;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  transition: .4s;
+}
+
+.btn-rotate {
+  color: #212529;
+  background-color: #ddd;
+}
+
+.btn-rotate:hover {
+  color: #212529;
+  background-color: #ccc;
+}
+
+.btn-rotate:focus {
+  outline: none;
+  border: none;
+}
+
+.btn-submit {
+  width: 100%;
+  margin: 0 auto;
+  border-radius: 20px;
+  text-transform: uppercase;
+  color: #212529;
+  font-weight: bold;
+}
+
+.btn-submit::before {
+  content: "";
+  position: absolute;
+  width: 20%;
+  height: 3px;
+  bottom: 0;
+  left: 160px;
+  background-color: #000;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.btn-submit:focus {
+  outline: none;
+  border: none;
+}
+
+.btn-submit:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+form {
+  width: 100%;
+  text-align: center;
+}
+
+
+
+.input {
+  width: 60%;
+  max-height: 20px;
+  padding: 20px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  border-bottom: gray 2px solid;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background-color: transparent;
+  color: orangered;
+  transition: ease-in-out 4s;
+}
+
+::-webkit-input-placeholder {
+  color: gray;
+}
+
+::-moz-placeholder {
+  color: gray;
+}
+
+:-ms-input-placeholder {
+  color: gray;
+}
+
+::-ms-input-placeholder {
+  color: gray;
+}
+
+::placeholder {
+  color: gray;
+}
+
+.input:focus {
+  outline: none !important;
+  border-bottom: 1px solid orangered;
+  transition: ease-in-out 2s;
+}
+
+.input:valid {
+  border-bottom: rgb(72, 225, 1) 1px solid;
+  transition: ease-in-out 4s;
+
+}
+
+.input:invalid {
+  border-bottom: red 1px solid;
+  transition: ease-in-out 4s;
+}
+
+.see-password {
+  position: absolute;
+  right: 10px;
+  padding-bottom: 5px;
+  cursor: pointer;
+}
+
+.group input {
+  padding-right: 40px;
+}
+
+.CPF {
+  input-security: auto;
+  overflow: hidden;
+}
+
+.btn-6 {
+  background: orangered;
+  line-height: 40px;
+  padding: 0;
+  color: #FFF;
+  border: none;
+  box-shadow: 0 0 5px orangered;
+}
+
+.btn-6 span {
+  position: relative;
+  display: block;
+  width: 120px;
+
+  height: 100%;
+}
+
+.btn-6:hover {
+  background: transparent;
+  color: #000;
+}
+
+.btn-6:before,
+.btn-6:after {
+  position: absolute;
+  content: "";
+  height: 0%;
+  width: 2px;
+  background: orangered;
+  box-shadow: 0 0 5px orangered;
+}
+
+.btn-6:before {
+  transition: 1s;
+  right: 0;
+  top: 0;
+  transition: all 500ms ease;
+}
+
+.btn-6:after {
+  left: 0;
+  transition: 1s;
+  bottom: 0;
+  transition: all 500ms ease;
+}
+
+.btn-6:hover:before {
+  transition: 1s;
+  transition: all 500ms ease;
+  height: 100%;
+}
+
+.btn-6:hover:after {
+  transition: all 500ms ease;
+  transition: 1s;
+  height: 100%;
+}
+
+.btn-6 span:before,
+.btn-6 span:after {
+  transition: 1s;
+  position: absolute;
+  content: "";
+  background: orangered;
+  box-shadow: 0 0 5px orangered;
+}
+
+.btn-6 span:before {
+  transition: 1s;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 2px;
+  transition: all 500ms ease;
+}
+
+.btn-6 span:after {
+  transition: 1s;
+  right: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  transition: all 500ms ease;
+}
+
+.btn-6 span:hover:before {
+  transition: 1s;
+  width: 100%;
+}
+
+.btn-6 span:hover:after {
+  width: 100%;
+  transition: 1s;
+}
+
+.btn-7 {
+  background: aqua;
+  line-height: 40px;
+  padding: 0;
+  color: #FFF;
+  border: none;
+  /* box-shadow: 0 0 5px aqua; */
+}
+
+.btn-7 span {
+  position: relative;
+  display: block;
+  width: 120px;
+
+  height: 100%;
+}
+
+.btn-7:hover {
+  background: transparent;
+  color: #000;
+  transition: 1s;
+  box-shadow: 0 0 5px aqua;
+}
+
+.btn-7:before,
+.btn-7:after {
+  position: absolute;
+  content: "";
+  height: 0%;
+  width: 2px;
+  background: aqua;
+}
+
+.btn-7:before {
+  transition: 1s;
+  right: 0;
+  top: 0;
+  transition: all 500ms ease;
+}
+
+.btn-7:after {
+  left: 0;
+  transition: 1s;
+  bottom: 0;
+  transition: all 500ms ease;
+}
+
+.btn-7:hover:before {
+  transition: 1s;
+  transition: all 500ms ease;
+  height: 100%;
+}
+
+.btn-7:hover:after {
+  transition: all 500ms ease;
+  transition: 1s;
+  height: 100%;
+}
+
+.btn-7 span:before,
+.btn-7 span:after {
+  transition: 1s;
+  position: absolute;
+  content: "";
+  background: aqua;
+  /* box-shadow: 0 0 5px aqua; */
+}
+
+.btn-7 span:before {
+  transition: 1s;
+  left: 0;
+  top: 0;
+  width: 0%;
+  height: 2px;
+  transition: all 500ms ease;
+}
+
+.btn-7 span:after {
+  transition: 1s;
+  right: 0;
+  bottom: 0;
+  width: 0%;
+  height: 2px;
+  transition: all 500ms ease;
+}
+
+.btn-7 span:hover:before {
+  transition: 1s;
+  width: 100%;
+}
+
+.btn-7 span:hover:after {
+  width: 100%;
+  transition: 1s;
+}

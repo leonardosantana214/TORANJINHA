@@ -1,0 +1,80 @@
+form {
+    margin: 500px;
+    margin-top: 25%;
+    border-radius: 10%;
+    border: solid 2px orangered;
+    height: 300px;
+    width: 380px;
+    box-shadow: 0 0 10px orangered, 0 0 40px orangered, 0 0 70px orangered;
+}
+/*bnt.Neon*/
+.bntneon {
+    padding: 4px solid;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    margin: 60px;
+    color: orange;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-decoration: none;
+    transition: 0,4s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+    margin-top: -25%;
+    border: 2px solid orange;
+    height: 50px;
+    background-color: black;
+
+
+}
+.bntneon:hover{
+    background-color: orangered;
+    color: #000;
+    box-shadow: 0 0 10px orangered, 0 0 40px orangered, 0 0 70px orangered;
+    
+
+}
+.bntneon:active{
+    color: orangered;
+    background: #000000;
+}
+.email, .senha {
+    margin: 10%;
+    font-family:monospace;
+    color: white;
+    background-color: #000;
+
+
+}
+body {
+    background-color: #000;
+}
+.title {
+    color: white;
+    box-shadow: 0 0 10px orangered, 0 0 40px orangered, 0 0 70px orangered;
+    font-family: fantasy;
+    font-size: 20px;
+    
+    margin: center;
+}
+.Mail, .Password {
+    background-color: #000;
+    color: white;
+}
+.f1{
+    color: white;
+    margin: 100px;
+    font-family: monospace;
+}
+
+.loader {
+    animation: fadeOut 4s;
+    animation-fill-mode: forwards;
+}
+@keyframes fadeOut {
+    100%{
+        opacity: 0;
+        visibility: hidden;
+    }
+}

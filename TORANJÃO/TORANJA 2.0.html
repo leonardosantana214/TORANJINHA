@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Vendas - Toranjinha</title>
+  <link rel="shortcut icon" href="Frutas/istockphoto-1243077910-170667a.jpg" type="image/x-icon">
+  <link rel="stylesheet" href="styleRevoluction.css">
+</head>
+
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="meu primeiro site.html">Inicio</a></li>
+        <img class="imagem"
+          src="Frutas/Logo.png" alt="">
+        <li><a href="TELA DE JOGOS.html">Jogos</a></li>
+        <li><a href="https://www.instagram.com/kinesprice/">Instagram</a></li>
+        <li><a href="LoginToranjão.php">Login</a></li>
+        <li><a><button type="submit" id="modoEscuroBtn" class="lua" onclick="troca()" ><img src="https://64.media.tumblr.com/ed7868e316b410275de826d78c08dfee/tumblr_p3fs1eHdCS1wvcbfqo1_1280.gif" style="width: 30px; height: 30px;" id="photo-dark" title="deixa escuro" alt="modo-escuro"></i></button></a></li>
+
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <h1>As Melhores Paisagens do PalPreto</h1>
+    <p>Veja nossa seleção de Paisagens de alta qualidade:</p>
+    <div class="products">
+      <div class="product">
+        <a href="Descrição do Produto - DarkSoul.html">
+          <img src="https://i.pinimg.com/originals/06/a8/5b/06a85b703ccc50fcc2214bac56214f48.gif" alt="Cabo de vassoura 1">
+          <h2>Dark Souls</h2>
+          <p>Seje um Bravo Guerreiro meu amigo </p>
+          <button>Comprar</button>
+        </a>
+      </div>
+      
+      <div class="product">
+        <a href="Descrição do Produto - FinalFantasy.html">
+          <img src="https://i.pinimg.com/originals/58/89/cb/5889cb1227933a14c8f24220fc7cd390.gif" alt="Cabo de vassoura 2">
+          <h2>Final Fantasy </h2>
+          <p>Um mundo cheio de aventuras</p>
+          <button>Comprar</button>
+        </a>
+      </div>
+      <div class="product">
+        <a href="Descrição do Produto - ElderRing.html">
+          <img src="https://cdna.artstation.com/p/assets/images/images/063/357/982/original/bryan-heemskerk-eldenringfinal.gif?1685365876" alt="Cabo de vassoura 3">
+          <h2>Elder Ring</h2>
+          <p>Um mundo unico com varios desafios</p>
+          <button>Comprar</button>
+        </a>
+      </div>
+    </div>
+  </main>
+  <br><br><br><br><br>
+  <footer>
+    <p>Cabos de Vassoura &copy; 2023</p>
+  </footer>
+  <script>
+  const modoEscuroBtn = document.getElementById('modoEscuroBtn');
+    const body = document.body;
+    
+    modoEscuroBtn.addEventListener('click', () => {
+      body.classList.toggle('modo-escuro');
+    })                                           
+
+    </script>
+</body>
+
+
+
+
+
+</html>

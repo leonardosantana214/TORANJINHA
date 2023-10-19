@@ -1,0 +1,281 @@
+:root {
+  --fundo-claro: #ffffff; /* Cor de fundo para o modo claro */
+  --texto-claro: #000000; /* Cor do texto para o modo claro */
+  --fundo-escuro: #000000; /* Cor de fundo para o modo escuro */
+  --texto-escuro: #ffffff; /* Cor do texto para o modo escuro */
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+  margin: auto;
+  font-family: 'poppins', sans-serif;
+}
+
+/* Estilos para o modo claro */
+body {
+  background-image:url('https://cdn.pnghd.pics/data/1792/pixel-art-gif-wallpaper-1920x1080-25.gif');
+  color: var(--texto-claro);
+  font-weight: 300 !important;
+  background-size: cover ;
+  transition: 2s;
+  background-repeat: no-repeat;
+}
+.lua{
+  border: none;
+}
+
+/* Estilos para o modo escuro */
+body.modo-escuro {
+  background-image: url('https://cdn.wallpapersafari.com/96/21/jHR8t1.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  transition: 2s;
+  color: var(--texto-escuro);
+}
+
+
+p {
+  margin: 0;
+  color: gray;
+  max-width: 700px;
+  font-weight: 300 !important;
+  transition: 1s;
+}
+
+nav li {
+  list-style: none;
+  font-family: 'poppins', sans-serif;
+  display: inline-flex;
+  font-weight: 300 !important;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  position: relative;
+  left: 900px;
+  padding: 5px;
+  color: gray;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: -40px;
+  margin-right: 10px;
+  font-weight: 200 !important;
+
+}
+
+nav a:hover {
+  color: orangered;
+}
+  #modo{
+  background-color: transparent;
+  border: none;
+}
+nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  font-weight: 200;
+  left: 0;
+  background-color: orangered;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+nav a:hover:before {
+  visibility: visible;
+  font-weight: 300 !important;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+#modoEscuroBtn{
+  background-color: transparent;
+  border: none;
+}
+ul img {
+  position: static;
+  height: 100px;
+  width: 100px;
+  left: -50px;
+  transition: 1s;
+}
+
+ul img:hover {
+  filter: opacity(50%);
+  transition: 1s;
+}
+
+section img {
+  position: relative;
+  left: 900px;
+}
+
+section {
+  font-family: 'poppins', sans-serif;
+  position: relative;
+  bottom: -180px;
+  left: 60px;
+
+}
+
+section h1 {
+  color: orangered;
+  font-size: 30px;
+  font-weight: bolder;
+}
+
+section span {
+  color: orangered;
+  font-weight: bolder;
+  font-size: 50px;
+}
+
+section a {
+  text-decoration: none;
+  color: white;
+  background-color: orangered;
+  border-radius: 50px;
+  padding: 10px;
+  font-weight: 200;
+  transition: 1s;
+}
+
+section a:hover {
+  filter: opacity(50%);
+  transition: 1s;
+}
+
+.Maçã {
+  position: absolute;
+  justify-content: right;
+  margin-left: 900px;
+  margin-top: -140px;
+  height: 500px;
+  transition: 1s;
+
+}
+
+.Maçã img {
+  max-width: 340px;
+  position: absolute;
+  transition: 1s;
+  box-shadow: 0 0 20px rgb(0, 0, 0);
+  animation: float 3s ease-in-out infinite;
+
+
+}
+
+.Maçã {
+
+  animation: float 3s ease-in-out infinite;
+}
+
+@keyframes float {
+
+  0%,
+  100% {
+    transform:rotate3d(4, 6, 4, 90deg) ;
+    transform: translateY(0)
+  }
+
+  50% {
+    transform:rotate3d(0, 1, 0, 60deg) ;
+    transform: translateY(-50px)
+  }
+}
+
+.Lua li {
+  list-style: none;
+  display: inline-block;
+  margin: 0 20px;
+  cursor: pointer;
+  transition: 1s;
+  margin-left: 0px;
+
+}
+
+.Lua {
+  position: absolute;
+  left: 30%;
+  bottom: 20px;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.Lua:hover {
+
+  transition: 1s;
+}
+
+
+.circulo {
+
+  position: absolute;
+  background-color: red;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  clip-path: circle(600px at right 800px);
+  transition: 1s;
+
+}
+
+.Maçã:hover {
+  transform: scale(1.1) translateY(-10px);
+  transition: 1s;
+  filter: drop-shadow(0 0 40px rgb(0, 0, 0));
+  border-radius: 50px;
+}
+
+.selected {
+  transform: scaleX(-1);
+  transition: 1s;
+
+}
+
+::-webkit-scrollbar {
+  color: transparent;
+  background-color: transparent;
+  border: solid transparent 1px;
+}
+
+::-webkit-scrollbar-button {
+  color: gray;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  transition: 1s;
+  width: 1px;
+  background-color: transparent;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  color: transparent;
+  filter: opacity(50%);
+  transition: 1.0s;
+  background-color: rgba(62, 48, 48, 0.438);
+  border-radius: 5px;
+  width: 1px;
+
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+  background-color: transparent;
+}
+
+::-webkit-scrollbar {
+  width: 6px;
+  background-color: transparent;
+}

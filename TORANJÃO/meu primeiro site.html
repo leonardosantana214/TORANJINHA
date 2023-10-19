@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="shortcut icon" href="Frutas/istockphoto-1243077910-170667a.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="style2.0.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toranja Revolution 2.0</title>
+</head>
+
+<body>
+    <div class="loader">
+        <div class="progress-bar"></div>
+    </div>
+    <div class="circulo"></div>
+    <!-- Menu do site -->
+    <header>
+        <nav>
+            <ul>
+                <li><a href="meu primeiro site.html">Inicio</a></li>
+                <img class="imagem" src="Frutas/Logo.png" alt="">
+                <li><a href="TELA DE JOGOS.html">Jogos</a></li>
+                <li><a href="https://www.instagram.com/kinesprice/">Instagram</a></li>
+                <li><a href="LoginToranjão.php">Login</a></li>
+                <li><a><button type="submit" id="modoEscuroBtn" class="lua" onclick="troca()" ><img src="https://64.media.tumblr.com/ed7868e316b410275de826d78c08dfee/tumblr_p3fs1eHdCS1wvcbfqo1_1280.gif" style="width: 30px; height: 30px;" id="photo-dark" title="deixa escuro" alt="modo-escuro"></i></button></a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+
+        <section>
+            <h1>Olá Seja Bem vindo ao Site do Toranjinha</h1>
+            <p id="TextoTroca"> Ajude a Nossa Torcida Organizada do Palmeiras e do Ribeirão Preto, o famoso <br>
+                <b><span>PalPreto</span></b></p>
+            <br> <br> <br>
+            <a href="TORANJA 2.0.html">Ajude eles</a>
+
+        </section>
+        <div class="imgBox"><img src="Frutas/de5cf616b2cad46.png" class="Maçã" /></div>
+        <ul class="Lua">
+            <div class="lua">
+
+                <li><img src="Frutas/de5cf616b2cad46.png"
+                        onclick="imgSlider('Frutas/de5cf616b2cad46.png');changeCircleColor('#fc081c'); trocarBotao1()">
+                </li>
+                <li><img src="Frutas/minecraft-golden-apple.png"
+                        onclick="imgSlider('Frutas/minecraft-golden-apple.png');changeCircleColor('#f3fc08'); trocarBotao2()">
+                </li>
+                <li><img src="Frutas/Enchanted_Golden_Apple_JE2_BE2.gif"
+                        onclick="imgSlider('Frutas/Enchanted_Golden_Apple_JE2_BE2.gif');changeCircleColor('#d752b1'); trocarBotao3()">
+                </li>
+            </div>
+        </ul>
+
+    </main>
+    <script>
+        const modoEscuroBtn = document.getElementById('modoEscuroBtn');
+        const body = document.body;
+
+        modoEscuroBtn.addEventListener('click', () => {
+            body.classList.toggle('modo-escuro');
+        })
+    </script>
+    <script src="JavadoTranjão.js"></script>
+</body>
+
+</html>

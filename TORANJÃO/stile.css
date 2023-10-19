@@ -1,0 +1,17 @@
+.PegaTrouxa {
+    
+    padding: 4px solid;
+    border-radius: 50px;
+    display: inline-block;
+    position: relative;
+    margin: 40px 0;
+    color: orange;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-decoration: none;
+    transition: 0,4s;
+    letter-spacing: 4px;
+    overflow: hidden;
+    margin-right: 50px;
+    border: 2px solid orange;
+    box-shadow:0 0 10px orangered, 0 0 40px orangered, 0 0 70px orangered;
+}

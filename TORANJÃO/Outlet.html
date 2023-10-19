@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+   body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+header ul {
+  list-style: none;
+}
+
+header ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+header a {
+  text-decoration: none;
+  color: #fff;
+}
+
+.parallax {
+  background-image: url('sua-imagem-de-fundo.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+section {
+  padding: 100px 0;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#section1">Seção 1</a></li>
+        <li><a href="#section2">Seção 2</a></li>
+        <li><a href="#section3">Seção 3</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="section1" class="parallax">
+    <h1>Seção 1</h1>
+  </section>
+
+  <section id="section2">
+    <h1>Seção 2</h1>
+  </section>
+
+  <section id="section3" class="parallax">
+    <h1>Seção 3</h1>
+  </section>
+
+  <footer>
+    <p>Rodapé do Site</p>
+  </footer>
+
+</body>
+</html>

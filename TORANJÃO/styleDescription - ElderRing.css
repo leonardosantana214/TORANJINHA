@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  background-image: url('https://wallpaperaccess.com/full/8351180.gif');
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #fff;
+}
+
+* {
+  margin: auto;
+}
+
+header{
+  background-color: #e0e0e07a;
+}
+
+nav li {
+  list-style: none;
+  font-family: 'poppins', sans-serif;
+  display: inline-flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+nav a {
+  position: relative;
+  left: 900px;
+  padding: 5px;
+  color: #000;
+  text-decoration: none;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  top: -40px;
+  margin-right: 10px;
+  font-weight: 200;
+
+}
+
+nav a:hover {
+  color: orangered;
+}
+
+nav a:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  background-color: orangered;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+nav a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+ul img {
+  position: static;
+  height: 100px;
+  width: 100px;
+  left: -50px;
+  transition: 1s;
+}
+
+ul img:hover {
+  filter: opacity(50%);
+  transition: 1s;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  font-family: 'poppins', sans-serif;
+}
+
+
+
+h1 {
+  margin: 0;
+  color: orangered;
+  font-size: 28px;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 20px;
+}
+
+.product-images {
+  flex-basis: 30%;
+  transition: 1s;
+  margin-right: 20px;
+  width: 500px;
+  height: 500px;
+  transition: 1s;
+}
+
+.product-images img {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.product-description {
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.product-price {
+  font-size: 24px;
+  margin-top: 20px;
+}
+
+.product-form {
+  margin-top: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+input {
+  width: 50px;
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.add-to-cart-button {
+  background-color: #333;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.add-to-cart-button:hover {
+  background-color: #555;
+}
+
+.product-reviews {
+  flex-basis: 100%;
+  margin-top: 20px;
+}
+
+.product-reviews h2 {
+  font-size: 24px;
+  margin-top: 0;
+  color: orangered;
+}
+
+.product-reviews ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.product-reviews li {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.review-author {
+  font-style: italic;
+  margin-top: 5px;
+}
+
+.imgSmall {
+  width: 150px;
+  height: 150px;
+  filter: grayscale(100%);
+  transition: 1s;
+
+}
+
+/* Hover das imagens */
+.product-images:hover {
+  transform: scale(0.9);
+  box-shadow: 0 0 20px orangered,0 0 20px orangered,0 0 20px orangered,0 0 20px orangered ;
+  transition: 1s;
+}
+
+.imgSmall:hover {
+  filter: grayscale(0%);
+  transition: 1s;
+}
+
+/* Texto da descrição */
+.product-description {
+  color: orangered;
+}
+
+.l2 {
+  font-weight: 200;
+}
+
+.selected {
+  transform: scaleX(-1);
+  transition: 1s;
+
+}
+
+/* quantidade input */
+.add-to-cart-button {
+  background-color: orangered;
+}
+
+::-webkit-inner-spin-button {
+  filter: opacity(30%);
+}
+
+.loader {
+  background-color: #f2f2f2;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background-color: orangered;
+  background-size: cover;
+  left: 0;
+  right: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-bar {
+  width: 200px;
+  height: 20px;
+  background-color: #e0e0e0;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.alert {
+  padding: 20px;
+  background-color: #f44336;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+.product-details{
+  background-color: #333333ce;
+}
+#Imgbig{
+  border: #333 solid 2px;
+  background-color: #33333382;
+}
